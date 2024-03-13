@@ -1,0 +1,108 @@
+.contact {
+  height: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 15px;
+}
+
+.h1Style {
+  font-size: 70px;
+  line-height: 70px;
+}
+.formContainer {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputStyle {
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  resize: none;
+}
+
+.span {
+  font-weight: 300;
+}
+
+.formBtn {
+  padding: 15px;
+  cursor: pointer;
+  background-color: orange;
+  border: none;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 361px) {
+  .contact {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .textContainer {
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  .h1Style {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .inputStyle {
+    padding: 10px;
+  }
+  .formBtn {
+    padding: 10px;
+  }
+  .formContainer {
+    width: 100%;
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 362px) and (max-width: 768px) {
+  .contact {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .textContainer {
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+  }
+  .h1Style {
+    font-size: 36px;
+    margin-top: 60px;
+  }
+  .inputStyle {
+    padding: 10px;
+  }
+  .formBtn {
+    padding: 10px;
+  }
+  .formContainer {
+    width: 100%;
+    padding: 25px;
+  }
+}

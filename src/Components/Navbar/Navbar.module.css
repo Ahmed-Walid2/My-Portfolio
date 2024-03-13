@@ -1,0 +1,42 @@
+.navbar {
+  height: 100px;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
+  height: 100%;
+}
+
+.fwBold {
+  font-weight: bold;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.iconSize {
+  width: 25px;
+  height: 25px;
+}
+
+.githubStyle {
+  background-color: white;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 992px) {
+  .fwBold {
+    display: none;
+  }
+  /* .wrapper {
+    justify-content: flex-end;
+    padding: 15px;
+  } */
+}

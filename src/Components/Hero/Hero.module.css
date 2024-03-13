@@ -1,0 +1,118 @@
+.hero {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  max-width: 992px;
+  height: 100%;
+  margin: auto;
+  padding: 15px;
+}
+
+.textContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.h1Style {
+  font-size: 88px;
+}
+
+.btnStyle {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.h2Style {
+  font-size: 30px;
+  color: rebeccapurple;
+  letter-spacing: 5px;
+}
+.heroImg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.scrollImg {
+  width: 50px;
+}
+
+.slidingText {
+  font-size: 63vh;
+  position: absolute;
+  bottom: -120px;
+  white-space: nowrap;
+  color: #ffffff09;
+  font-weight: bold;
+  width: 50%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 368px) {
+  .textContainer {
+    height: 50%;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  .h1Style {
+    font-size: 25px;
+  }
+  .h2Style {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+  .heroImg {
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    top: unset;
+    object-fit: contain;
+  }
+  .btnStyle {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 369px) and (max-width: 992px) {
+  .textContainer {
+    height: 50%;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  .h1Style {
+    font-size: 36px;
+  }
+  .heroImg {
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    top: unset;
+    object-fit: contain;
+  }
+  .btnStyle {
+    margin-bottom: 5px;
+  }
+}

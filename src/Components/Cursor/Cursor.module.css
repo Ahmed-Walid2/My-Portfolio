@@ -1,0 +1,21 @@
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: fixed;
+  z-index: 100;
+}
+
+@media screen and (max-width: 950px) {
+  .cursor {
+    display: none;
+  }
+}
+
+/* @media screen (max-width: 738px) {
+}
+@media screen (max-width: 1024) {
+}
+@media screen (max-width: 1366) {
+} */
