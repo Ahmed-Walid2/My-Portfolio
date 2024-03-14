@@ -12,7 +12,7 @@ import styles from "./Skills.module.css";
 
 export default function Skills() {
   return (
-    <section className="skills">
+    <section id="Skills" className="skills">
       <div>
         <h1 className={styles.title}>Skills &amp; Tools</h1>
         <div className={styles.skill}>

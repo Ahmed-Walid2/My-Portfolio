@@ -30,6 +30,7 @@ export default function Portfolio() {
       img: FreshCart,
       desc: "E-Commerce website offers a diverse and comprehensive range of products, allowing customers to easily find what they need.",
       demo: "https://ecommerce-freshcart.vercel.app/login",
+      repo: "https://github.com/Ahmed-Walid2/ecommerce-freshcart",
     },
     {
       id: 2,
@@ -37,6 +38,7 @@ export default function Portfolio() {
       img: MoviesApp,
       desc: "The website displays information about a list of popular movies, now playing movies, trending movies, top rated movies and upcoming movies.",
       demo: "https://ahmed-walid2.github.io/Movies/",
+      repo: "https://github.com/Ahmed-Walid2/Movies",
     },
     {
       id: 3,
@@ -44,6 +46,7 @@ export default function Portfolio() {
       img: WeatherApp,
       desc: "The website displaying temperatures for three days worldwide.",
       demo: "https://ahmed-walid2.github.io/Weather/",
+      repo: "https://github.com/Ahmed-Walid2/Weather",
     },
     {
       id: 4,
@@ -51,6 +54,7 @@ export default function Portfolio() {
       img: GamesApp,
       desc: "A website for gamers to view the games with a description and rating, and also enable them to filter games by the category of the game.",
       demo: "https://ahmed-walid2.github.io/Games-API/",
+      repo: "https://github.com/Ahmed-Walid2/Games-API",
     },
     {
       id: 5,
@@ -58,6 +62,7 @@ export default function Portfolio() {
       img: loginSystem,
       desc: "A simple Login System.",
       demo: "https://ahmed-walid2.github.io/Login/",
+      repo: "https://github.com/Ahmed-Walid2/Login",
     },
     {
       id: 6,
@@ -65,6 +70,7 @@ export default function Portfolio() {
       img: bookmark,
       desc: "A website to save your favorite sites.",
       demo: "https://ahmed-walid2.github.io/Bookmark/",
+      repo: "https://github.com/Ahmed-Walid2/Bookmark",
     },
     {
       id: 7,
@@ -72,6 +78,7 @@ export default function Portfolio() {
       img: crud,
       desc: "A simple crud system with JavaScript and Regex.",
       demo: "https://ahmed-walid2.github.io/CRUD/",
+      repo: "https://github.com/Ahmed-Walid2/CRUD",
     },
     {
       id: 8,
@@ -79,6 +86,7 @@ export default function Portfolio() {
       img: kerri,
       desc: "A website for people to showcase their portfolio with their projects and things they worked on.",
       demo: "https://ahmed-walid2.github.io/Kerri/",
+      repo: "https://github.com/Ahmed-Walid2/Kerri",
     },
   ];
 
@@ -92,7 +100,7 @@ export default function Portfolio() {
     const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
     return (
-      <section>
+      <section id="Portfolio">
         <div className={`container ${styles.container}`}>
           <div className={`wrapper ${styles.wrapper}`}>
             <figure className={`${styles.imgContainer}`} ref={ref}>
@@ -108,9 +116,22 @@ export default function Portfolio() {
             >
               <h2 className={styles.h2Style}>{project.title}</h2>
               <p className={styles.descStyle}>{project.desc}</p>
-              <a className={styles.demoBtn} href={project.demo} target="_blank">
-                Live Demo
-              </a>
+              <div className="buttons">
+                <a
+                  className={styles.demoBtn}
+                  href={project.demo}
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+                <a
+                  className={styles.demoBtn}
+                  href={project.repo}
+                  target="_blank"
+                >
+                  Code
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>

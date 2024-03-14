@@ -15,7 +15,7 @@ export default function Sidebar() {
       },
     },
     closed: {
-      clipPath: "circle(30px at 50px 50px)",
+      clipPath: "circle(0px at 50px 50px)",
       transition: {
         delay: 0.5,
         type: "spring",
@@ -76,7 +76,7 @@ export default function Sidebar() {
         <svg width="23" height="23" viewBox="0 0 23 23">
           <motion.path
             strokeWidth="3"
-            stroke="black"
+            stroke="white"
             strokeLinecap="round"
             variants={{
               closed: { d: "M 2 2.5 L 20 2.5" },
@@ -85,7 +85,7 @@ export default function Sidebar() {
           />
           <motion.path
             strokeWidth="3"
-            stroke="black"
+            stroke="white"
             strokeLinecap="round"
             d="M 2 9.432 L 20 9.423"
             variants={{
@@ -95,7 +95,7 @@ export default function Sidebar() {
           />
           <motion.path
             strokeWidth="3"
-            stroke="black"
+            stroke="white"
             strokeLinecap="round"
             variants={{
               closed: { d: "M 2 16.346 L 20 16.346" },

@@ -73,13 +73,15 @@ export default function Hero() {
               Contact Me
             </motion.a>
           </motion.div>
-          <motion.img
-            variants={textVarients}
-            animate="scrollBtn"
-            className={styles.scrollImg}
-            src={require("../../images/scroll.png")}
-            alt="Scroll"
-          />
+          <a className={styles.anchorWidth} href="#Portfolio">
+            <motion.img
+              variants={textVarients}
+              animate="scrollBtn"
+              className={styles.scrollImg}
+              src={require("../../images/scroll.png")}
+              alt="Scroll"
+            />
+          </a>
         </motion.div>
       </div>
       <motion.div

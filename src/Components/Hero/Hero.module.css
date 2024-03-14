@@ -56,6 +56,10 @@
   width: 50px;
 }
 
+.anchorWidth {
+  width: fit-content;
+}
+
 .slidingText {
   font-size: 63vh;
   position: absolute;

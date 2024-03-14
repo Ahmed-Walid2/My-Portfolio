@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Navbar.module.css";
 import Sidebar from "../Sidebar/Sidebar";
+import githubLogo from "../../images/github.svg";
+import linkedinLogo from "../../images/linkedin.png";
 
 export default function Navbar() {
   return (
@@ -39,14 +41,14 @@ export default function Navbar() {
           <a href="https://www.linkedin.com/in/ahmed-walid2/" target={"_blank"}>
             <img
               className={styles.iconSize}
-              src={require("../../images/linkedin.png")}
+              src={linkedinLogo}
               alt="LinkedIn icon"
             />
           </a>
           <a href="https://github.com/Ahmed-Walid2" target={"_blank"}>
             <img
               className={`${styles.iconSize} ${styles.githubStyle}`}
-              src={require("../../images/github-logo.png")}
+              src={githubLogo}
               alt="GitHub icon"
             />
           </a>

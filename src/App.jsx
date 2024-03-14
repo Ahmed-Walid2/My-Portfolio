@@ -14,11 +14,11 @@ function App() {
         <Navbar />
         <Hero />
       </section>
-      <section id="Skills">
+      <section>
         <Banner type="skills" />
       </section>
       <Skills />
-      <section id="Portfolio">
+      <section>
         <Banner type="portfolio" />
       </section>
       <Portfolio />
